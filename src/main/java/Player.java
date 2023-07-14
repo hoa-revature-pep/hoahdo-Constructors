@@ -9,7 +9,7 @@
  *
  * The second constructor will use a player's name and level to set the Player object's respective field.
  *
- * These constructors would be called to instantiate the object as seen is a previous lab:
+ * These constructors would be called to instantiate the object as seen in a previous lab:
  *      Player newPlayer = new Player("Mario");
  *      Player newPlayer = new Player("Mario", 35);
  **/
@@ -31,7 +31,8 @@ public class Player {
      * @param playerName the name of the player to be created.
      */
     public Player(String playerName){
-
+        this.playerName = playerName;
+        this.level = 1;
     }
 
     /**
@@ -48,7 +49,8 @@ public class Player {
      * @param level the starting level of the player to be created.
      */
     public Player(String playerName, int level){
-
+        this.playerName = playerName;
+        this.level = level;
     }
 
 }
